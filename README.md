@@ -140,7 +140,7 @@ Like most things in this repo, it will likely continue to evolve as ideas improv
 
 A video of the current RC3D raycasting demo can be found here:
 
-**YouTube:** [Insert YouTube link here](PASTE_YOUTUBE_LINK_HERE)
+**YouTube:** [https://youtu.be/y9OKEO7IwvA]
 
 ---
 
