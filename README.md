@@ -1,8 +1,8 @@
 # Project Journal
 
-A public development journal of things I build, experiment with, break, fix, and occasionally drag into existence properly.
+A public development journal documenting projects, experiments, tools, and technical work as they are developed.
 
-This repository is a mix of projects and ideas, including:
+This repository contains a mix of work across several areas, including:
 
 - electronics
 - firmware
@@ -10,35 +10,33 @@ This repository is a mix of projects and ideas, including:
 - demos
 - tools
 - engine experiments
-- whatever else ends up on the bench
+- other technical projects and prototypes
 
-It is not meant to be one single polished product.
+This is not intended to be a single polished product or a tightly packaged release repository.
 
-Instead, this repo is more like an open journal or workshop space — a place where people can browse through entries, look at the code, pick out the bits they like, and use whatever is useful to them.
+Instead, it is structured as an open journal or workshop space: a place where people can browse through entries, explore the code, follow the development process, and reuse any parts that may be useful to them.
 
 ---
 
-## Public Code — Use What You Want
+## Public Code
 
 Everything in this repository is public.
 
-If you find code, ideas, systems, snippets, structures, techniques, or tools here that are useful to you, feel free to use them.  
-Take what you want, adapt it, remix it, learn from it, improve it, or drag parts of it into your own projects.
+If you find code, ideas, systems, structures, techniques, or tools here that are useful, you are welcome to use them in your own work. You may adapt, extend, remix, or build on anything in this repository.
 
-There are no strings attached.
+There are no formal restrictions attached.
 
-The only thing I’d *maybe* ask is a small nod in my direction if something here helped you out — but even that is not a requirement.
+If something here proves helpful, a small credit or nod in my direction would be appreciated, but it is not required.
 
-The point of this repo is openness.  
-Code should be useful, accessible, and easy to dig through.
+The purpose of this repository is to keep the work open, accessible, and available to others.
 
 ---
 
-## What This Repository Is
+## About This Repository
 
-This repo is organised more like a journal than a traditional release page.
+This repository is organised more like a journal than a traditional project page.
 
-That means it may contain:
+It may include:
 
 - early experiments
 - rough prototypes
@@ -47,17 +45,16 @@ That means it may contain:
 - firmware tests
 - graphics experiments
 - game systems
-- half-mad technical ideas that turned out better than expected
-- and sometimes things that are simply interesting enough to keep
+- technical ideas in development
+- projects that are useful or interesting enough to document and keep
 
-Some entries will be small.  
-Some will be more complete.  
-Some will be clean.  
-Some will be a bit rough around the edges.
+Some entries will be small and focused.  
+Others will be more complete.  
+Some will be refined, while others may remain experimental.
 
 That is intentional.
 
-This repository is here to document the process as much as the result.
+The aim of this repository is to document the development process as much as the finished result.
 
 ---
 
@@ -68,87 +65,83 @@ This repository is here to document the process as much as the result.
 ## Entry 001 — RC3D Raycasting Demo  
 ### RC3D Editor + Game Player Engine
 
-The first entry in this journal is the current **RC3D raycasting demo**, built around two connected parts:
+The first entry in this journal is the current **RC3D raycasting demo**, built around two connected components:
 
 - **RC3D Editor**
 - **Game Player Engine**
 
-This project is about more than just throwing a raycaster on screen and calling it done.  
-The aim is to build both the **tool side** and the **runtime side** together, so the project has an actual workflow behind it.
+This project is focused not only on rendering a raycasted scene, but on building both the **tooling** and the **runtime** together, so the work develops as a practical and usable workflow rather than as an isolated rendering test.
 
 ### RC3D Editor
 
-The **RC3D Editor** is the map-building and editing side of the project.
+The **RC3D Editor** is the content creation and map editing side of the project.
 
-It exists to make building and adjusting levels far easier than hardcoding every little thing by hand like some sleep-deprived cave goblin with a keyboard problem.
+Its purpose is to make building and adjusting levels more efficient and more practical than relying entirely on hardcoded data.
 
-The editor is there to help with:
+The editor is intended to support:
 
 - creating and shaping map geometry
 - editing vertices and wall structures
 - building level layouts visually
-- adjusting sectors and room flow
-- testing ideas quickly
-- making iteration faster and less painful
+- adjusting sectors and spatial flow
+- testing map ideas quickly
+- improving iteration speed during development
 
-In other words, this is the part that helps construct the world.
+In short, this is the part of the project used to construct and refine the world.
 
 ### Game Player Engine
 
 The **Game Player Engine** is the runtime side of the project.
 
-This is the part that takes the map data and actually does something useful with it: rendering the world, handling movement, and acting as the playable side of the demo.
+This is the component that takes map data produced for the demo and puts it into motion by rendering the world, handling movement and interaction, and providing a playable environment for testing.
 
-It is the part responsible for:
+It is responsible for:
 
-- loading map / level data
+- loading map and level data
 - rendering the raycasted scene
 - running player movement and interaction
 - testing the world in real time
-- proving that the editor output works in practice, not just in theory
+- validating that editor-created content works in practice
 
-This is what turns the project from “a map editor” into an actual engine demo.
+This is the part that turns the project from an editing tool into a functioning engine demo.
 
 ### Why this entry matters
 
-What makes this entry important to me is that it is not just a rendering test.  
-It is the start of a proper workflow.
+What makes this entry important is that it represents more than a standalone rendering experiment.
 
-The editor and the player engine support each other:
+It is the beginning of a proper workflow in which the two sides of the project support one another:
 
 - the **editor** builds the world
 - the **engine** runs the world
 
-That makes the project far more useful than a one-off experiment.  
-It becomes something that can grow, be tested properly, and be pushed further over time.
+That makes the project more useful as a foundation for further work, testing, and future expansion.
 
 ### Current direction
 
-This demo is part of a larger interest in practical, structured real-time rendering tools and game systems.
+This demo sits within a broader interest in practical real-time rendering systems, engine development, and usable technical tools.
 
-The focus right now is on building something that is:
+The current focus is on building something that is:
 
 - workable
 - understandable
 - extendable
-- fun to experiment with
-- useful as both a demo and a foundation
+- useful as both a demo and a foundation for future development
 
-Like most things in this repo, it will likely continue to evolve as ideas improve, features get added, and bad decisions are identified and publicly shamed.
+Like most work in this repository, it will continue to evolve as features are added, ideas are refined, and the overall system becomes more capable.
 
 ### Video
 
 A video of the current RC3D raycasting demo can be found here:
 
-**YouTube:** [https://youtu.be/y9OKEO7IwvA]
+**YouTube:** [RC3D Raycasting Demo](https://youtu.be/y9OKEO7IwvA)
 
 ---
 
-## More entries later
+## More Entries to Follow
 
-This is only the start.
+This is only the beginning.
 
-Future entries in this journal may include more work in areas like:
+Future entries in this journal may include work in areas such as:
 
 - electronics projects
 - embedded systems
@@ -157,22 +150,18 @@ Future entries in this journal may include more work in areas like:
 - graphics tools
 - demoscene-style demos
 - rendering tests
-- odd little technical side-projects
+- smaller technical side projects
 
-So if you are here to browse, borrow, learn, or just poke around for interesting parts, that is exactly what this repo is for.
+If you are here to browse, learn, reuse ideas, or explore specific parts of the code, that is exactly what this repository is intended for.
 
 ---
 
-## Final note
+## Final Note
 
 This repository is open by design.
 
-Look through it.  
-Pick out what is useful.  
-Take inspiration.  
-Take code.  
-Build something better with it.
+Feel free to explore it, study it, reuse parts of it, and build on anything that proves useful.
 
-And if something here ends up helping you out, a nod would be appreciated.
+And if something here helps you, a small credit would be appreciated.
 
-That’s all.
+That is all.
